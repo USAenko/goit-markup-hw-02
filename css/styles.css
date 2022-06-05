@@ -12,7 +12,6 @@
     --negative-color: #fff;
     --dark-background: #2F303A;
     --footer-opacity: rgba(255, 255, 255, 0.6);
-    --background-button-inactive: #F5F4FA;
 }
 
 .page-body {
@@ -77,7 +76,7 @@
 .button-studio,
 .button-portfolio {
     color: var(--primary-text-color);
-    background-color: var(--background-button-inactive);
+    background-color: var(--negative-color);
     cursor: pointer;
 }
 
