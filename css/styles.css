@@ -1,10 +1,171 @@
-body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.logo{
-    font-family: Railway;
+/* основний колір тексту 212121 */
+/* колір посилань та параграфів 757575 */
+/* колір акценту 2196F3 */
+/* колір кнопки 188CE8 */
+/* текст в мейні та футері FFFFFF */
+/* колір фону мейна та футера 2F303A */
+/* колір фону секція 2 F5F4FA */
+:root{
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196F3;
+    --negative-color: #fff;
+    --dark-background: #2F303A;
+    --footer-opacity: rgba(255, 255, 255, 0.6);
+    --background-button-inactive: #F5F4FA;
 }
 
-.blue{
-    color: #2196F3;
+.page-body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--negative-color);
+    color: var(--primary-text-color);
+}
+
+/* header */
+.header-logo,
+.footer-logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: var(--primary-text-color);
+    text-decoration: none;    
+}
+
+.logo-blue {
+    color: var(--accent-color);
+}
+
+.nav-link,
+.nav-link-current {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.header-contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+
+.nav-link:hover, 
+.nav-link:focus,
+.header-contact:hover,
+.header-contact:focus,
+.nav-link-current{
+    color: var(--accent-color);
+}
+
+/*main*/
+.hero{
+    background-color: var(--dark-background);
+}
+
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    color: var(--negative-color)
+}
+
+/* buttons */
+.button-studio,
+.button-portfolio {
+    color: var(--primary-text-color);
+    background-color: var(--background-button-inactive);
+    cursor: pointer;
+}
+
+.button-studio{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.button-portfolio {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus,
+.button-studio:hover,
+.button-studio:focus{
+    color: var(--negative-color);
+    background-color: var(--accent-color);
+}
+/* section лозунги */
+
+.features{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.features-text{
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--secondary-text-color);
+}
+
+/* section зайняття */
+.work-title,
+.team-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+/* section команда */
+.team-member{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+.team-position{
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--secondary-text-color);
+}
+
+/*  */
+.portfolio-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.portfolio-text{
+    font-size: 16px;
+    line-height: 30px;
+    color:var(--secondary-text-color);
+}
+/* footer */
+.footer{
+    background-color: var(--dark-background);
+}
+
+.footer-logo{
+    font-family: 'Raleway';
+    color: var(--negative-color);
+    text-decoration: none;
+}
+
+.footer-adress{
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--negative-color);
+}
+
+.footer-adress-contact{
+    color: var(--footer-opacity);
+    text-decoration: none;
 }

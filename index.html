@@ -5,64 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
   </head>
-  <body>
+  <body class="page-body">
     <header>
       <nav>
-        <a class="logo" href=""><span class="logo-blue">Web</span>Studio</a>
-        <ul class="header-nav">
-          <li><a href="./index.html" class="headernav-link-current">Студия</a></li>
-          <li><a href="./portfolio.html" class="header-nav-link">Портфолио</a></li>
-          <li><a href="" class="header-nav-link">Контакты</a></li>
+        <a class="header-logo" href=""><span class="logo-blue">Web</span>Studio</a>
+        <ul>
+          <li><a href="./index.html" class="nav-link-current">Студия</a></li>
+          <li><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
+          <li><a href="" class="nav-link">Контакты</a></li>
         </ul>
       </nav>
       <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li><a class="header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="header-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
-      <section>
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <button type="button">Заказать услугу</button>
+      <section class="hero">
+        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <button type="button" class="button-studio">Заказать услугу</button>
       </section>
       <!--Перша секція лозунги-->
       <section>
-        <ul>
+        <ul class="features">
           <li>
-            <h3>Внимание к деталям</h3>
-            <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+            <h3 class="features-title">Внимание к деталям</h3>
+            <p class="features-text">
+              Идейные соображения, а также начало повседневной работы по формированию позиции.
+            </p>
           </li>
           <li>
-            <h3>Пунктуальность</h3>
-            <p>
+            <h3 class="features-title">Пунктуальность</h3>
+            <p class="features-text">
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
           <li>
-            <h3>Планирование</h3>
-            <p>
+            <h3 class="features-title">Планирование</h3>
+            <p class="features-text">
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
           <li>
-            <h3>Современные</h3>
-            <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            <h3 class="features-title">Современные</h3>
+            <p class="features-text">
+              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+            </p>
           </li>
         </ul>
       </section>
       <!--Друга секція зайняття-->
       <section>
-        <h2>Чем мы занимаемся</h2>
+        <h2 class="work-title">Чем мы занимаемся</h2>
         <ul>
           <li>
             <img src="./images/activity/box1.jpg" alt="activity1" width="370" />
@@ -77,38 +81,40 @@
       </section>
       <!-- Третя секція існуюча команда-->
       <section>
-        <h2>Наша команда</h2>
+        <h2 class="team-title">Наша команда</h2>
         <ul>
           <li>
             <img src="./images/team/igor.jpg" alt="teammate1" width="270" />
-            <h3>Игорь Демьяненко</h3>
-            <p>Product Designer</p>
+            <h3 class="team-member">Игорь Демьяненко</h3>
+            <p class="team-position">Product Designer</p>
           </li>
           <li>
             <img src="./images/team/olga.jpg" alt="teammate2" width="270" />
-            <h3>Ольга Репина</h3>
-            <p>Frontend Developer</p>
+            <h3 class="team-member">Ольга Репина</h3>
+            <p class="team-position">Frontend Developer</p>
           </li>
           <li>
             <img src="./images/team/nikolay.jpg" alt="teammate3" width="270" />
-            <h3>Николай Тарасов</h3>
-            <p>Marketing</p>
+            <h3 class="team-member">Николай Тарасов</h3>
+            <p class="team-position">Marketing</p>
           </li>
           <li>
             <img src="./images/team/mikhail.jpg" alt="teammate4" width="270" />
-            <h3>Михаил Ермаков</h3>
-            <p>UI Designer</p>
+            <h3 class="team-member">Михаил Ермаков</h3>
+            <p class="team-position">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="">WebStudio</a>
-      <address>
+    <footer class="footer">
+      <a class="footer-logo" href=""><span class="logo-blue">Web</span>Studio</a>
+      <address class="footer-adress">
         <p>г. Киев, пр-т Леси Украинки, 26</p>
         <ul>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+          <li>
+            <a href="mailto:info@example.com" class="footer-adress-contact">info@example.com</a>
+          </li>
+          <li><a href="tel:+380991111111" class="footer-adress-contact">+38 099 111 11 11</a></li>
         </ul>
       </address>
     </footer>
