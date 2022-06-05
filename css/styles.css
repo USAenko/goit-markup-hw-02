@@ -167,3 +167,8 @@
     color: var(--footer-opacity);
     text-decoration: none;
 }
+
+.footer-adress-contact:hover,
+.footer-adress-contact:active {
+    color: var(--accent-color)
+}
