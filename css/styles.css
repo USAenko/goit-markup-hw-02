@@ -12,12 +12,20 @@
     --negative-color: #fff;
     --dark-background: #2F303A;
     --footer-opacity: rgba(255, 255, 255, 0.6);
+    --button-hover: #188CE8;
+    --light-background: #f5f4fa;
 }
 
+/* global */
 .page-body {
     font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
     background-color: var(--negative-color);
     color: var(--primary-text-color);
+}
+
+.none-style-list{
+    list-style: none;
 }
 
 /* header */
@@ -26,7 +34,7 @@
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     color: var(--primary-text-color);
     text-decoration: none;    
 }
@@ -39,7 +47,8 @@
 .nav-link-current {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     color: var(--primary-text-color);
     text-decoration: none;
 }
@@ -47,7 +56,8 @@
 .header-contact {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     text-decoration: none;
 }
@@ -62,54 +72,48 @@
 
 /*main*/
 .hero{
+    
     background-color: var(--dark-background);
 }
 
 .hero-title{
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     color: var(--negative-color)
-}
-
-/* buttons */
-.button-studio,
-.button-portfolio {
-    color: var(--primary-text-color);
-    background-color: var(--negative-color);
-    cursor: pointer;
 }
 
 .button-studio{
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
-}
-
-.button-portfolio {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-}
-
-.button-portfolio:hover,
-.button-portfolio:focus,
-.button-studio:hover,
-.button-studio:focus{
+    line-height: 1.87;
+    letter-spacing: 0.06em;
     color: var(--negative-color);
     background-color: var(--accent-color);
+    cursor: pointer;
 }
+
+.button-studio:hover,
+.button-studio:focus{
+    background-color: var(--button-hover);
+}
+
 /* section лозунги */
 
-.features{
+.features-title{
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
 }
 
 .features-text{
+    width: 270px;
+
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     color: var(--secondary-text-color);
 }
 
@@ -118,33 +122,58 @@
 .team-title{
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
 }
 
 /* section команда */
+.team{
+    background-color: var(--light-background) ;
+}
+
 .team-member{
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
 
 }
 
 .team-position{
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
     color: var(--secondary-text-color);
 }
 
-/*  */
+/* portfolio */
+
+.button-portfolio {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color: var(--primary-text-color);
+    background-color: var(--light-background);
+    cursor: pointer;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+    color: var(--negative-color);
+    background-color: var(--accent-color);
+}
+
+.portfolio-link{
+    text-decoration-line: none;
+}
 .portfolio-title{
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
 }
 
 .portfolio-text{
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     color: var(--secondary-text-color);
 }
 /* footer */
@@ -159,8 +188,10 @@
 
 .footer-adress{
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
+    font-style: normal;
     color: var(--negative-color);
+
 }
 
 .footer-adress-contact{
